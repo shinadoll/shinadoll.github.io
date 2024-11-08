@@ -1,11 +1,11 @@
-.header {
+#header {
 	color:red;
 }
 
-.container {
+#container {
 	color:blue;
 }
 
-.footer {
+#footer {
 	color:green;
 }
