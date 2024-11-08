@@ -4,16 +4,7 @@
 <head>
 
 <script src="library.js"></script>
-
-<title>リンゴとミカン</title>
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<include src="html_element.html"></include>
 <script>
-
   let includes = document.getElementsByTagName('include');
   for (var i = 0; i < includes.length; i++) {
 	 let include = includes[i];
@@ -26,6 +17,14 @@
 	 fetch(filename).then(response => response.text()).then(text => callback(text));
   }
 </script>
+
+<title>リンゴとミカン</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<include src="html_element.html"></include>
 
 <div id="layout">
 <div id="header">
