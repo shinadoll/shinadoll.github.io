@@ -28,11 +28,12 @@ li {
 
 
 #layout {
+	size:779px;
 	margin:auto;
 }
 
 #header {
-	color:red;
+	color:black;
 }
 
 #container {
