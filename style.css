@@ -42,6 +42,7 @@ li {
 #content {
 	background-color:white;
 	border-style: solid;
+	width:500px;
 	border-width:1px;
 	padding-left:10px;
 	padding-right:10px;
@@ -54,6 +55,7 @@ li {
 	position:absolute;
 	top:0;
 	left:0;
+	margin-left:200px;
 	width:150px;
 }
 
