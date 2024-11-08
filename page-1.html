@@ -42,7 +42,7 @@ function includeHTML() {
 
 <div id="layout">
 
-<div w3-include-html="header.html" id="footer"></div> 
+<div w3-include-html="header.html" id="header"></div> 
 <script>
 includeHTML();
 </script>
@@ -55,23 +55,15 @@ includeHTML();
 <p>今、ちょっとあたしたちについて話す。あたしの名前はリンゴで、あたしの友達の名前はミカンだよ。</p>
 <p>あたしはミカンと近所人で、子供の時から友達。ミカンくんはちょっとしずかだけど、とてもたのしいよ！</p>
 <p>福島県の中に町に住んでる。とても静かだなあ。あたしたち、高校生だけど、すごく詰まらないなあ。</p>
-</div>
-<include src="menu.html"></include>
-</div>
 
-<include src="footer.html"></include>
+<div w3-include-html="menu.html" id="menu"></div> 
 <script>
-  let includes = document.getElementsByTagName('include');
-  for (var i = 0; i < includes.length; i++) {
-	 let include = includes[i];
-	 load_file(includes[i].attributes.src.value, function(text) {
-		include.insertAdjacentHTML('afterend', text);
-		include.remove();
-	 });
-  }
-  function load_file(filename, callback) {
-	 fetch(filename).then(response => response.text()).then(text => callback(text));
-  }
+includeHTML();
+</script>
+
+<div w3-include-html="footer.html" id="footer"></div> 
+<script>
+includeHTML();
 </script>
 
 </div>
