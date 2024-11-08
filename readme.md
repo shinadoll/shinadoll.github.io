@@ -1,1 +1,1 @@
-sample text
+html, css, js, ect. practice.
