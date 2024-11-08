@@ -1,17 +1,62 @@
+<!DOCTYPE html>
 <html>
+
 <head>
+
+<script src="library.js"></script>
+
 <title>リンゴとミカン</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+<include src="./result.html"></include>
+<script>
+
+  let includes = document.getElementsByTagName('include');
+  for (var i = 0; i < includes.length; i++) {
+	 let include = includes[i];
+	 load_file(includes[i].attributes.src.value, function(text) {
+		include.insertAdjacentHTML('afterend', text);
+		include.remove();
+	 });
+  }
+  function load_file(filename, callback) {
+	 fetch(filename).then(response => response.text()).then(text => callback(text));
+  }
+</script>
+
+<div id="layout">
 <div id="header">
-<h1>Welcome to website</h1>
+<h1>リンゴとミカン</h1>
 </div>
+
 <div id="container">
-<p></p>
-<p></p>
+
+<div id="content">
+<h2>リンゴとミカンへようこそ</h2>
+<p>みんなはじめまして！あたしはリンゴだよ。これは初めてポスト。</p>
+<p>友達とブログを作くって、いっしょに書こうと思っていったんだ。</p>
+<p>今、ちょっとあたしたちについて話す。あたしの名前はリンゴで、あたしの友達の名前はミカンだよ。</p>
+<p>あたしはミカンと近所人で、子供の時から友達。ミカンくんはちょっとしずかだけど、とてもたのしいよ！</p>
+<p>福島県の中に町に住んでる。とても静かだなあ。あたしたち、高校生だけど、すごく詰まらないなあ。</p>
+</div>
+
+<div id="column-l">
+<ul>
+<li><a href="index.html">Menu</a></li>
+<li><a href="index.html">Menu</a></li>
+<li><a href="index.html">Menu</a></li>
+<li><a href="index.html">Menu</a></li>
+</ul>
+</div>
+
 </div>
 <div id="footer">
+<p>Copyright ur mom tm</p>
 </div>
+</div>
+
 </body>
 </html>
