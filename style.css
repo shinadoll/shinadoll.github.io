@@ -1,6 +1,6 @@
 body {
 	font-family: Klee-One;
-	background-image: url("Space_parallax.webp");
+	background-image: url("Images/Space_parallax.webp");
 	font-size:16px;
 	margin:0px;
 	padding:0px;
@@ -28,11 +28,8 @@ li {
 
 
 #layout {
-<<<<<<< HEAD
 	size:779px;
-=======
 	width:779px;
->>>>>>> 85608618df13abf8446886666034b297ff30935c
 	margin:auto;
 }
 
@@ -53,6 +50,11 @@ li {
 	padding-bottom:3em;
 	margin-left:150px;
 	margin-right:80px;
+}
+
+.main-menu {
+  width:20%;
+  float:left;
 }
 
 #menu {
