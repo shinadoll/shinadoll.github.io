@@ -52,8 +52,13 @@ li {
 	margin-right:80px;
 }
 
-.main-menu {
-  width:20%;
+#main-menu {
+	padding:100px;
+	margin:auto;
+}
+
+.main-menu-button {
+  width:10%;
   float:left;
 }
 
