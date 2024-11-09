@@ -39,22 +39,25 @@ function includeHTML() {
 
 <body>
 
-<div id="layout">
-
-<div w3-include-html="header.html" id="header"></div> 
+<div id="header">
+<h1><strong>リンゴとミカン</strong></h1>
+<p><strong>ブログ</strong></p>
+</div> 
 
 <div id="container">
 <div id = "main-menu">
-<div class="main-menu-button"><img src="Images/miku-1.png"></img></div>
-<div class="main-menu-button"><img src="Images/rin-1.png"></img></div>
-<div class="main-menu-button"><img src="Images/len-1.png"></img></div>
-<div class="main-menu-button"><img src="Images/luka-1.png"></img></div>
-<div class="main-menu-button"><img src="Images/meiko-1.png"></img></div>
-<div class="main-menu-button"><img src="Images/kaito-1.png"></img></div>
+<div class="main-menu-button"><a href="page-1.html"><img src="Images/miku-1.png" class="main-menu-img"></img></a></div>
+<div class="main-menu-button"><img src="Images/rin-1.png" class="main-menu-img"></img></div>
+<div class="main-menu-button"><img src="Images/len-1.png" class="main-menu-img"></img></div>
+<div class="main-menu-button"><img src="Images/luka-1.png" class="main-menu-img"></img></div>
+<div class="main-menu-button"><img src="Images/meiko-1.png" class="main-menu-img"></img></div>
+<div class="main-menu-button"><img src="Images/kaito-1.png" class="main-menu-img"></img></div>
 </div>
 </div>
 
-<div w3-include-html="footer.html" id="footer"></div> 
+<div id="footer">
+<p>copyright stuff.</p>
+</div> 
 <script>
 includeHTML();
 </script>

@@ -1,9 +1,7 @@
 body {
-	font-family: Klee-One;
 	background-image: url("Images/Space_parallax.webp");
+	font-family: Klee-One;
 	font-size:16px;
-	margin:0px;
-	padding:0px;
 }
 
 @font-face {
@@ -26,20 +24,36 @@ li {
 }
 
 
-
-#layout {
-	size:779px;
-	width:779px;
-	margin:auto;
-}
-
 #header {
-	color:black;
+	margin:auto;
+	background-color:black;
+	color:white;
 }
 
 #container {
-	position:relative;
+	margin:auto;
 }
+
+#main-menu {
+	padding: 10px;
+	margin-top: 10%;
+	margin-left: 10%;
+	margin-right:10%;
+	margin-bottom: 25%;
+}
+
+.main-menu-button {
+	float:left;
+	width: 16.66%;
+	height: 16.66%;
+}
+
+.main-menu-img {
+	margin-left:10%;
+	margin-right:20%;
+	width: 100%;
+}
+
 
 #content {
 	background-color:white;
@@ -52,15 +66,9 @@ li {
 	margin-right:80px;
 }
 
-#main-menu {
-	padding:100px;
-	margin:auto;
-}
 
-.main-menu-button {
-  width:10%;
-  float:left;
-}
+
+
 
 #menu {
 	position:absolute;
@@ -70,11 +78,12 @@ li {
 }
 
 #main-menu-button {
-	background-color:#edccff
+	background-color:#edccff;
 }
 
 #footer {
-	padding-top:3em;
-	margin-left:150px;
-	margin-right:100px;
+	height:10px;
+	background-color: #F1F1F1;
+	text-align: center;
+	padding: 10px;
 }
