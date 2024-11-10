@@ -1,69 +1,46 @@
 <!DOCTYPE html>
-<html>
-
+<html lang=ja>
 <head>
-
-<script>
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /*loop through a collection of all HTML elements:*/
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain attribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /*make an HTTP request using the attribute value as the file name:*/
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /*remove the attribute, and call this function once more:*/
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
-        }
-      }      
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /*exit the function:*/
-      return;
-    }
-  }
-};
-</script>
-
-<title>リンゴとミカン</title>
-<link rel="stylesheet" href="style.css">
+	<title>Main Page</title>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+<div id="sub-body">
 
 <div id="header">
-<h1><strong>リンゴとミカン</strong></h1>
-<p><strong>ブログ</strong></p>
-</div> 
+	<h1><ins>Main Page</ins></h1>
+</div>
 
 <div id="container">
-<div id = "main-menu">
-<div class="main-menu-button"><a href="page-1.html"><img src="Images/miku-1.png" class="main-menu-img"></img></a></div>
-<div class="main-menu-button"><img src="Images/rin-1.png" class="main-menu-img"></img></div>
-<div class="main-menu-button"><img src="Images/len-1.png" class="main-menu-img"></img></div>
-<div class="main-menu-button"><img src="Images/luka-1.png" class="main-menu-img"></img></div>
-<div class="main-menu-button"><img src="Images/meiko-1.png" class="main-menu-img"></img></div>
-<div class="main-menu-button"><img src="Images/kaito-1.png" class="main-menu-img"></img></div>
-</div>
+	<ul id="main-menu">
+		<li><a href="page-1.html">
+			<img src="Images/miku-1.png">
+		</a><p>Menu</p></li>
+		<li><a href="about:blank">
+			<img src="Images/rin-1.png">
+		</a><p>Text</p></li>
+		<li><a href="about:blank">
+			<img src="Images/len-1.png">
+		</a><p>Text</p></li>
+		<li><a href="about:blank">
+			<img src="Images/luka-1.png">
+		</a><p>Text</p></li>
+		<li><a href="about:blank">
+			<img src="Images/meiko-1.png">
+		</a><p>Text</p></li>
+		<li><a href="about:blank">
+			<img src="Images/kaito-1.png">
+		</a><p>Text</p></li>
+	</ul>
 </div>
 
 <div id="footer">
-<p>copyright stuff.</p>
-</div> 
-<script>
-includeHTML();
-</script>
+	<p>Footer<p/>
 </div>
 
-
-
+</div>
 </body>
 </html>
